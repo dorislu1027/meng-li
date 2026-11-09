@@ -1,1 +1,10 @@
-
+body{
+  margin:0;
+}
+img{
+  position:absolute;
+}
+.body {
+  left: 100px;
+  top: 150px;
+}
