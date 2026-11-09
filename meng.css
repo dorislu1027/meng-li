@@ -8,3 +8,18 @@ img{
   left: 100px;
   top: 150px;
 }
+.backhair {
+  z-index: 1;
+}
+
+.body {
+  z-index: 5;
+}
+
+.face {
+  z-index: 10;
+}
+
+.fronthair {
+  z-index: 15;
+}
