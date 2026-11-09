@@ -8,18 +8,33 @@ img{
   left: 100px;
   top: 150px;
 }
-.backhair {
-  z-index: 1;
+.backhair{ z-index: 1; }
+.leftthigh{ z-index: 2; }
+.rightthigh{ z-index: 3; }
+.leftcalf{ z-index: 4; }
+.rightcalf{ z-index: 5; }
+.leftupperarm{ z-index: 6; }
+.rightupperarm{ z-index: 7; }
+.body{
+  z-index: 8; 
+  width: 220px;
+  height: auto;
+  left: 100px;
+  top: 30px;
 }
-
-.body {
-  z-index: 5;
+.leftforearm{ z-index: 9; }
+.rightforearm { z-index: 10; }
+.face{ z-index: 11; }
+.lefteye { z-index: 12; }
+.righteye{ z-index: 13; }
+.lefteyelid{ z-index: 14; }
+.righteyelid{ z-index: 15; }
+.fronthair{ 
+  z-index: 16;
+  width: 220px;
+  height: auto;
+  left: 100px;
+  top: 30px;
 }
-
-.face {
-  z-index: 10;
-}
-
-.fronthair {
-  z-index: 15;
-}
+.leftornament { z-index: 17; }
+.rightornament { z-index: 18; }
