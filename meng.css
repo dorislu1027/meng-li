@@ -17,7 +17,10 @@ img{
 }
 .backdress{
     z-index: 2;
-    
+    width: 200px;
+    height: auto;
+    left: 619px;
+    top: 385px;
 }
 .leftthigh{ 
     z-index: 3;
