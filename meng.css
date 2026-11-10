@@ -9,14 +9,18 @@ img{
   top: 150px;
 }
 .backhair{ 
-   z-index: 1;
+    z-index: 1;
     width: 200px;
     height: auto;
     left: 621px;
     top: 303px;
 }
-.leftthigh{ 
+.backdress{
     z-index: 2;
+    
+}
+.leftthigh{ 
+    z-index: 3;
     width: 45px;
     height: auto;
     left: 709px;
@@ -115,7 +119,6 @@ img{
     top: 335px;
     visibility: hidden;
 }
-
 .fronthair{ 
     z-index: 16;
     width: 110px;
@@ -123,7 +126,6 @@ img{
     left: 663px;
     top: 262px;
 }
-
 .leftornament {
     z-index: 17;
     width: 45px;
@@ -131,7 +133,6 @@ img{
     left: 660px;
     top: 264px;
 }
-
 .rightornament { 
     z-index: 18;
     width: 45px;
