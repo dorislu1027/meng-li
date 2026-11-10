@@ -13,15 +13,22 @@ img{
 .rightthigh{ z-index: 3; }
 .leftcalf{ z-index: 4; }
 .rightcalf{ z-index: 5; }
-.leftupperarm{ z-index: 6; }
-.rightupperarm{ z-index: 7; }
 .body{
-  z-index: 8; 
+  z-index: 6; 
   width: 220px;
   height: auto;
-  left: 100px;
-  top: 30px;
+  left: 0px;
+  top: 0px;
 }
+.leftupperarm{ 
+  position: absolute;
+  width: 45px;
+  height: auto;
+  left: 0px;
+  top: 20px;
+  z-index: 7; 
+}
+.rightupperarm{ z-index: 8; }
 .leftforearm{ z-index: 9; }
 .rightforearm { z-index: 10; }
 .face{ z-index: 11; }
