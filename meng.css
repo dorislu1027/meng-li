@@ -26,15 +26,16 @@ img{
     z-index: 3;
     width: 45px;
     height: auto;
-    left: 709px;
-    top: 458px;
+    left: 680px;
+    top: 433px;
+}
 }
 .rightthigh{ 
     z-index: 3;
     width: 45px;
     height: auto;
-    left: 682px;
-    top: 466px;
+    left: 710px;
+    top: 433px;
 }
 .leftcalf{ 
     z-index: 4;
@@ -47,8 +48,8 @@ img{
     z-index: 5;
     width: 40px;
     height: auto;
-    left: 687px;
-    top: 534px;
+    left: 716px;
+    top: 499px;
 }
 .body{
     z-index: 6;
@@ -87,24 +88,24 @@ img{
 }
 .face{ 
     z-index: 11;
-    width: 90px;
+    width: 100px;
     height: auto;
-    left: 677px;
-    top: 278px; 
+    left: 673px;
+    top: 300px;
 }
 .lefteye { 
     z-index: 12;
-    width: 34px;
+    width: 30px;
     height: auto;
-    left: 685px;
-    top: 324px;
+    left: 689px;
+    top: 325px;
 }
 .righteye{ 
     z-index: 13;
-    width: 35px;
+    width: 30px;
     height: auto;
-    left: 723px;
-    top: 323px; 
+    left: 724px;
+    top: 325px; 
 }
 .lefteyelid{ 
     z-index: 14;
