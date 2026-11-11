@@ -31,6 +31,8 @@ img {
 #backhair {
   position: absolute;
   z-index: 1;
+  left: 621px;
+  top: 303px;
 }
 
 .backdress {
@@ -43,10 +45,14 @@ img {
 
 #leftleg {
   z-index: 3;
+  left: 680px;
+  top: 433px;
 }
 
 #rightleg {
   z-index: 4;
+  left: 710px;
+  top: 433px;
 }
 
 .body {
@@ -72,6 +78,8 @@ img {
 #head {
   position: absolute;
   z-index: 8;
+  left: 673px;
+  top: 300px;
 }
 
 /* ===== 头部内部 ===== */
@@ -91,17 +99,34 @@ img {
   width: 30px;
   height: auto;
 }
-
+.lefteye{
+  left: 16px;
+  top: 25px;
+}
+.righteye{
+  left: 51px;
+  top: 25px;
+}
 /* 眼皮：眼睛前面 */
 .lefteyelid,
 .righteyelid {
   z-index: 3;
+  width: 25px;
 }
-
+.lefteyelid{
+  left: 15px;
+  top: 35px;
+}
+.righteyelid{
+  left: 52px;
+  top: 35px;
+}
 /* 前发容器：盖住额头 */
 #hair {
   position: absolute;
   z-index: 4;
+  left: -10px;
+  top: -38px;
 }
 
 /* 前发 */
@@ -111,7 +136,11 @@ img {
   height: auto;
 
 }
-
+/* 后发 */
+.backhair{
+  width: 200px;
+  height: auto;
+}
 /* 发饰：盖住前发 */
 .leftornament,
 .rightornament {
@@ -119,8 +148,14 @@ img {
   height: auto;
   z-index: 2;
 }
-
-
+.leftornament{
+  left: -3px;
+  top: 2px;
+}
+.rightornament{
+  left: 69px;
+  top: 3px;
+}
 /* ===== 左手臂内部 ===== */
 
 .leftupperarm {
@@ -173,6 +208,8 @@ img {
 
 #leftcalf {
   z-index: 2;
+  left: 27px;
+  top: 100px;
 }
 
 .leftcalf {
@@ -192,6 +229,8 @@ img {
 
 #rightcalf {
   z-index: 2;
+  left: 6px;
+  top: 66px;
 }
 
 .rightcalf {
