@@ -55,7 +55,7 @@ img {
   z-index: 4;
   left: 710px;
   top: 433px;
-  transform-origin:
+  transform-origin: 22px 8px;
 }
 
 .body {
@@ -70,14 +70,14 @@ img {
   z-index: 6;
   left: 675px;
   top: 360px;
-  transform-origin:
+  transform-origin: 22px 10px;
 }
 
 #rightarm {
   left: 708px;
   top: 360px;
   z-index: 7;
-  transform-origin:
+  transform-origin: 22px 10px;
 }
 
 #head {
@@ -85,7 +85,7 @@ img {
   z-index: 8;
   left: 673px;
   top: 300px;
-  transform-origin:
+  transform-origin: 50px 90px;
 }
 
 /* ===== 头部内部 ===== */
@@ -104,6 +104,7 @@ img {
   z-index: 2;
   width: 30px;
   height: auto;
+  visibility: visible;
 }
 .lefteye{
   left: 16px;
@@ -118,6 +119,7 @@ img {
 .righteyelid {
   z-index: 3;
   width: 25px;
+  visibility: hidden;
 }
 .lefteyelid{
   left: 20px;
@@ -133,7 +135,7 @@ img {
   z-index: 4;
   left: -10px;
   top: -38px;
-  transform-origin:
+  transform-origin: 55px 10px;
 }
 
 /* 前发 */
@@ -175,7 +177,7 @@ img {
   z-index: 1;
   left: -2px;
   top: 40px;
-  transform-origin:
+  transform-origin: 22px 8px;
 }
 
 .leftforearm {
@@ -197,7 +199,7 @@ img {
   z-index: 1;
   left: 5px;
   top: 33px;
-  transform-origin:
+  transform-origin: 22px 8px;
 }
 
 .rightforearm {
@@ -219,7 +221,7 @@ img {
   z-index: 2;
   left: -2px;
   top: 64px;
-  transform-origin:
+  transform-origin: 20px 8px;
 }
 
 .leftcalf {
@@ -241,7 +243,7 @@ img {
   z-index: 2;
   left: 6px;
   top: 66px;
-  transform-origin:
+  transform-origin: 20px 8px;
 }
 
 .rightcalf {
