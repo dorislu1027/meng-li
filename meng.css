@@ -78,6 +78,7 @@ img {
   top: 360px;
   z-index: 7;
   transform-origin: 22px 10px;
+  transform:rotate(30deg);
 }
 
 #head {
@@ -178,6 +179,7 @@ img {
   left: -2px;
   top: 40px;
   transform-origin: 22px 8px;
+  transform:rotate(-30deg);
 }
 
 .leftforearm {
@@ -200,6 +202,7 @@ img {
   left: 5px;
   top: 33px;
   transform-origin: 22px 8px;
+  transform:rotate(-30deg);
 }
 
 .rightforearm {
