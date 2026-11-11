@@ -4,10 +4,6 @@ body{
 img{
   position:absolute;
 }
-.body {
-  left: 100px;
-  top: 150px;
-}
 .backhair{ 
     z-index: 1;
     width: 200px;
@@ -28,7 +24,6 @@ img{
     height: auto;
     left: 680px;
     top: 433px;
-}
 }
 .rightthigh{ 
     z-index: 3;
