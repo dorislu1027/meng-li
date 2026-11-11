@@ -276,3 +276,16 @@ img {
 #head:hover .righteyelid {
   visibility: visible;
 }
+/*测试*/
+#leftforearm::after {
+  content: "";
+  position: absolute;
+  left: 22px;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  background: red;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
