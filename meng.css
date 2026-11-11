@@ -251,3 +251,13 @@ img {
   width: 40px;
   height: auto;
 }
+
+/* 点击歪头 */
+#head {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+#head.tilt {
+  transform: rotate(12deg);
+}
