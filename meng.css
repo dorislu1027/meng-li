@@ -124,13 +124,13 @@ img {
 /* ===== 左手臂内部 ===== */
 
 .leftupperarm {
-  z-index: 1;
+  z-index: 2;
   width: 45px;
   height: auto;
 }
 
 #leftforearm {
-  z-index: 2;
+  z-index: 1;
   left: -2px;
   top: 40px;
 }
@@ -145,13 +145,13 @@ img {
 /* ===== 右手臂内部 ===== */
 
 .rightupperarm {
-  z-index: 1;
+  z-index: 2;
   width: 45px;
   height: auto;
 }
 
 #rightforearm {
-  z-index: 2;
+  z-index: 1;
   left: 5px;
   top: 33px;
 }
