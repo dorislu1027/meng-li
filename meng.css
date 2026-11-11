@@ -259,5 +259,17 @@ img {
 }
 
 #head.tilt {
-  transform: rotate(12deg);
+  transform: rotate(5deg);
+}
+#head:hover{
+  transform: scale(1.02) translateY(5px);
+}
+#head:hover .lefteye,
+#head:hover .righteye {
+  visibility: hidden;
+}
+
+#head:hover .lefteyelid,
+#head:hover .righteyelid {
+  visibility: visible;
 }
