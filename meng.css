@@ -78,7 +78,7 @@ img {
 }
 
 #leftarm {
-  z-index: 6;
+  z-index: 4;
   left: 671px;
   top: 360px;
   transform-origin: 30px 10px;
@@ -88,7 +88,7 @@ img {
 #rightarm {
   left: 708px;
   top: 358px;
-  z-index: 7;
+  z-index: 4;
   transform-origin: 35px 10px;
   transform:rotate(279deg);
 }
