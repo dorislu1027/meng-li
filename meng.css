@@ -299,7 +299,6 @@ img {
     -webkit-user-drag: none;
 }
 
-.body,
 .leftforearm,
 .rightforearm {
     cursor: grab;
@@ -330,9 +329,23 @@ img {
     top: 10px;
 }
 
-#mengli.dragging {
-    animation-play-state: paused;
-}
 .body {
     pointer-events: none;
+}
+/* 身体触碰区域 */
+#body-hit {
+    position: absolute;
+    left: 685px;
+    top: 380px;
+    width: 70px;
+    height: 100px;
+    z-index: 3;
+    cursor: grab;
+}
+
+/* 前臂直接作为触碰区域 */
+.leftforearm,
+.rightforearm {
+    pointer-events: auto;
+    cursor: grab;
 }
