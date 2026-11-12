@@ -333,3 +333,6 @@ img {
 #mengli.dragging {
     animation-play-state: paused;
 }
+.body {
+    pointer-events: none;
+}
