@@ -1,23 +1,35 @@
+
 const head = document.getElementById("head");
 const pet = document.getElementById("mengli");
+const leftarm = document.getElementById("leftarm");
+const rightarm = document.getElementById("rightarm");
 
 let isDragging = false;
 let dragPart = null;
 
 let offsetX = 0;
 let offsetY = 0;
-const leftarm = document.getElementById("leftarm");
-const rightarm = document.getElementById("rightarm");
 
 let startAngle = 0;
 let startRotation = 0;
 
-//点击歪头
+// 点击歪头
 head.addEventListener("click", function() {
-  head.classList.toggle("tilt");
+    head.classList.toggle("tilt");
 });
 
-//拖动！！！
+// 计算鼠标与肩关节之间的角度
+function getAngle(e, arm) {
+    const joint = arm.querySelector(".joint");
+    const rect = joint.getBoundingClientRect();
+
+    const dx = e.clientX - rect.left;
+    const dy = e.clientY - rect.top;
+
+    return Math.atan2(dy, dx) * 180 / Math.PI;
+}
+
+// 拖动！！！
 // 按下鼠标
 pet.addEventListener("pointerdown", function(e) {
 
@@ -46,6 +58,19 @@ pet.addEventListener("pointerdown", function(e) {
         pet.style.position = "fixed";
         pet.style.left = rect.left + "px";
         pet.style.top = rect.top + "px";
+
+    } else if (dragPart === "left") {
+
+        // 记录左手臂初始角度
+        startAngle = getAngle(e, leftarm);
+        startRotation = 33;
+
+    } else if (dragPart === "right") {
+
+        // 记录右手臂初始角度
+        startAngle = getAngle(e, rightarm);
+        startRotation = 279;
+
     }
 
     pet.setPointerCapture(e.pointerId);
@@ -65,57 +90,36 @@ pet.addEventListener("pointermove", function(e) {
 
     } else if (dragPart === "left") {
 
-        // 以后添加左手旋转
+        // 旋转整个左手臂
+        const angle = getAngle(e, leftarm);
+
+        leftarm.style.transform =
+            `rotate(${startRotation + angle - startAngle}deg)`;
 
     } else if (dragPart === "right") {
 
-        // 以后添加右手旋转
+        // 旋转整个右手臂
+        const angle = getAngle(e, rightarm);
+
+        rightarm.style.transform =
+            `rotate(${startRotation + angle - startAngle}deg)`;
 
     }
 });
 
 // 结束拖动
 function stopDragging() {
+
     isDragging = false;
     dragPart = null;
+
+    // 恢复手臂初始姿势
+    leftarm.style.transform = "";
+    rightarm.style.transform = "";
+
     pet.classList.remove("dragging");
 }
 
 pet.addEventListener("pointerup", stopDragging);
 pet.addEventListener("pointercancel", stopDragging);
 pet.addEventListener("lostpointercapture", stopDragging);
-
-//单独手臂拖动
-function getAngle(e, arm) {
-    const joint = arm.querySelector(".joint");
-    const rect = joint.getBoundingClientRect();
-
-    const dx = e.clientX - rect.left;
-    const dy = e.clientY - rect.top;
-
-    return Math.atan2(dy, dx) * 180 / Math.PI;
-}
-if (dragPart === "left") {
-    startAngle = getAngle(e, leftarm);
-    startRotation = 33;
-}
-
-if (dragPart === "right") {
-    startAngle = getAngle(e, rightarm);
-    startRotation = 279;
-}
-} else if (dragPart === "left") {
-
-    const angle = getAngle(e, leftarm);
-    leftarm.style.transform =
-        `rotate(${startRotation + angle - startAngle}deg)`;
-
-} else if (dragPart === "right") {
-
-    const angle = getAngle(e, rightarm);
-    rightarm.style.transform =
-        `rotate(${startRotation + angle - startAngle}deg)`;
-
-}
-leftarm.style.transform = "";
-rightarm.style.transform = "";
