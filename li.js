@@ -6,6 +6,11 @@ let dragPart = null;
 
 let offsetX = 0;
 let offsetY = 0;
+const leftarm = document.getElementById("leftarm");
+const rightarm = document.getElementById("rightarm");
+
+let startAngle = 0;
+let startRotation = 0;
 
 //点击歪头
 head.addEventListener("click", function() {
@@ -79,3 +84,38 @@ function stopDragging() {
 pet.addEventListener("pointerup", stopDragging);
 pet.addEventListener("pointercancel", stopDragging);
 pet.addEventListener("lostpointercapture", stopDragging);
+
+//单独手臂拖动
+function getAngle(e, arm) {
+    const joint = arm.querySelector(".joint");
+    const rect = joint.getBoundingClientRect();
+
+    const dx = e.clientX - rect.left;
+    const dy = e.clientY - rect.top;
+
+    return Math.atan2(dy, dx) * 180 / Math.PI;
+}
+if (dragPart === "left") {
+    startAngle = getAngle(e, leftarm);
+    startRotation = 33;
+}
+
+if (dragPart === "right") {
+    startAngle = getAngle(e, rightarm);
+    startRotation = 279;
+}
+} else if (dragPart === "left") {
+
+    const angle = getAngle(e, leftarm);
+    leftarm.style.transform =
+        `rotate(${startRotation + angle - startAngle}deg)`;
+
+} else if (dragPart === "right") {
+
+    const angle = getAngle(e, rightarm);
+    rightarm.style.transform =
+        `rotate(${startRotation + angle - startAngle}deg)`;
+
+}
+leftarm.style.transform = "";
+rightarm.style.transform = "";
