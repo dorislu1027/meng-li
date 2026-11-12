@@ -6,6 +6,17 @@ body {
   position: relative;
   width: 900px;
   height: 700px;
+  animation: breathe 3s ease-in-out infinite;
+}
+
+/*呼吸动画*/
+@keyframes breathe{
+    0%,100%{
+        transform:translateY(0px) scale(1.00);
+    }
+    50%{
+        transform:translateY(5px) scale(1.025);
+    }
 }
 
 img {
@@ -68,18 +79,18 @@ img {
 
 #leftarm {
   z-index: 6;
-  left: 675px;
+  left: 671px;
   top: 360px;
-  transform-origin: 22px 10px;
-  
+  transform-origin: 30px 10px;
+  transform:rotate(33deg);
 }
 
 #rightarm {
   left: 708px;
-  top: 360px;
+  top: 358px;
   z-index: 7;
-  transform-origin: 30px 11px;
-  transform:rotate(305deg)
+  transform-origin: 35px 10px;
+  transform:rotate(279deg);
 }
 
 #head {
@@ -226,7 +237,7 @@ img {
   z-index: 2;
   left: -2px;
   top: 64px;
-  transform-origin: 20px 8px;
+  transform-origin: 18px 16px;
 }
 
 .leftcalf {
@@ -248,7 +259,7 @@ img {
   z-index: 2;
   left: 6px;
   top: 66px;
-  transform-origin: 20px 8px;
+  transform-origin: 18px 16px;
 }
 
 .rightcalf {
