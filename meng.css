@@ -190,9 +190,8 @@ img {
   z-index: 1;
   left: -2px;
   top: 40px;
-  transform:scaleX(-1);
   transform-origin: 15px 22px;
-  transform:rotate(49deg);
+  transform:rotate(49deg) scaleX(-1);
 }
 
 .leftforearm {
